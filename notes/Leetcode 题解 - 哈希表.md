@@ -57,7 +57,24 @@ public boolean containsDuplicate(int[] nums) {
 }
 ```
 
-## 3. 最长和谐序列
+## 3. 数组中重复的数字
+
+03\. 数组中重复的数字 (Easy)
+
+ [力扣](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)/[题解](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/solution/mian-shi-ti-03-shu-zu-zhong-zhong-fu-de-shu-zi-yua/) 
+
+```python
+class Solution:
+    def findRepeatNumber(self, nums: [int]) -> int:
+        dic = set()
+        for num in nums:
+            if num in dic: return num
+            dic.add(num)
+        return -1
+```
+
+
+## 4. 最长和谐序列
 
 594\. Longest Harmonious Subsequence (Easy)
 
@@ -87,7 +104,7 @@ public int findLHS(int[] nums) {
 }
 ```
 
-## 4. 最长连续序列
+## 5. 最长连续序列
 
 128\. Longest Consecutive Sequence (Hard)
 
